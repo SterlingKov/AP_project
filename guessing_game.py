@@ -54,6 +54,13 @@ while loop:
                 if strikes > 2:
                     print('you lost :(')
                     print('')
+                    strikes = 0
+                    play = input("Do you want to play again? (y/n) - ")
+                    if play == 'y':
+                        pass
+                    elif play == 'n':
+                        print('fine')
+                        loop = False
 
 
             guess_word_string = ''
