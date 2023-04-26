@@ -10,6 +10,9 @@ word_list = words.split("\n")
 
 strikes = 0
 
+#functions 
+
+
 #main loop
 loop = True
 while loop:
@@ -27,7 +30,7 @@ while loop:
 
         guess_word = guess_word.split()
         guess_word_string = ''
-        
+
         #guessing loop
         while guess_word_string != word and strikes < 3:
 
@@ -61,6 +64,7 @@ while loop:
                     elif play == 'n':
                         print('fine')
                         loop = False
+                        break
 
 
             guess_word_string = ''
